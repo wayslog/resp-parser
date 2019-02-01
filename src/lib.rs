@@ -223,7 +223,7 @@ impl BulkSizeParser {
                         x if x > 0 => BulkBodyParser {
                             expect: (x + 2) as usize,
                         }
-                            .into_enum(),
+                        .into_enum(),
                         _ => Message::Bulk(Some(vec![])).into_enum(),
                     };
                 }
@@ -276,7 +276,7 @@ impl ArraySizeParser {
                             expect: x,
                             current: Box::new(InitParser.into_enum()),
                         }
-                            .into_enum(),
+                        .into_enum(),
                     };
                 }
                 _ => return Error::ContentWrong.into_enum(),
