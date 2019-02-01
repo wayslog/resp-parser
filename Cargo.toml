@@ -1,0 +1,9 @@
+[package]
+name = "resp-parser"
+version = "0.1.0"
+authors = ["DCjanus <DCjanus@dcjanus.com>"]
+edition = "2018"
+
+[dependencies]
+enumx = "0.3.0"
+enumx_derive = "0.3.0"
